@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Joe's Coffee",
+    "category": "Cafe",
+    "city": "Siliguri",
+    "rating": 4.5,
+    "desc": "Best espresso in town. Cozy corner seating and fast WiFi."
+  },
+  {
+    "id": 2,
+    "name": "Tech Repairs",
+    "category": "Electronics",
+    "city": "Siliguri",
+    "rating": 4.2,
+    "desc": "Fast phone and laptop fixes. Same-day screen replacements."
+  },
+  {
+    "id": 3,
+    "name": "Green Bites",
+    "category": "Restaurant",
+    "city": "Darjeeling",
+    "rating": 4.8,
+    "desc": "Farm-to-table menu. Vegetarian and vegan options."
+  },
+  {
+    "id": 4,
+    "name": "Swift Couriers",
+    "category": "Logistics",
+    "city": "Siliguri",
+    "rating": 3.9,
+    "desc": "Same-day delivery across the city. Track in real time."
+  },
+  {
+    "id": 5,
+    "name": "Mountain View Inn",
+    "category": "Hotel",
+    "city": "Darjeeling",
+    "rating": 4.6,
+    "desc": "Stunning Kanchenjunga views. Includes breakfast."
+  },
+  {
+    "id": 6,
+    "name": "The Book Nook",
+    "category": "Retail",
+    "city": "Siliguri",
+    "rating": 4.3,
+    "desc": "New and second-hand books. Great Bengali fiction section."
+  }
+]

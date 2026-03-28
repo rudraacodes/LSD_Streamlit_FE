@@ -1,0 +1,15 @@
+# Virtual environment — never commit this
+.venv/
+venv/
+env/
+
+# Secrets — NEVER upload your API keys or passwords
+.env
+
+# Python bytecode — auto-generated, not needed
+__pycache__/
+*.pyc
+*.pyo
+
+# VSCode settings (optional — remove this line if you want to share settings)
+.vscode/
