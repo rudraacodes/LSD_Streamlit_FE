@@ -9,25 +9,28 @@ from components.details import show_details
 # layout="wide" uses the full browser width instead of the narrow centre column.
 st.set_page_config(page_title="Business Directory", layout="wide")
 
+
+# ── Sidebar filters ────────────────────────────────────────────────────────
+# Everything inside "with st.sidebar:" renders in the left panel.
+# Streamlit auto-shows/hides the sidebar based on screen size
+name, category, location, rating = apply_sidebar_filters()
 # ── Fake business data ─────────────────────────────────────────────────────
-# This is just a Python list of dicts. Later you'd replace this with
-# a real API call. For now, it lets you build the whole UI without a backend.
-# Load data
-businesses = load_businesses()
+# FastAPI now handles filtering, so we just pass the raw values through from the UI.
+# Sidebar renders widgets and returns the chosen values
+# Fetch businesses using those values (API or fallback)
+businesses = load_businesses(name, category, location, rating)
+
 
 # ── Hero banner ────────────────────────────────────────────────────────────
 # st.markdown() lets you drop raw HTML into the page.
 # unsafe_allow_html=True is required, otherwise Streamlit strips the tags.
 show_hero()
 
+
 # ── Business Cards ────────────────────────────────────────────────────────────
 # st.columns() creates a horizontal layout. Here we make 3 equal-width columns.
 show_business_cards(businesses)
 
-# ── Sidebar filters ────────────────────────────────────────────────────────
-# Everything inside "with st.sidebar:" renders in the left panel.
-# Streamlit auto-shows/hides the sidebar based on screen size.
-show_filters = apply_sidebar_filters(businesses)
 
 # ── Business detail panel ──────────────────────────────────────────────────
 # Check whether the user has clicked a "View details" button.

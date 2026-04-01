@@ -14,7 +14,7 @@ def show_business_cards(businesses):
             ">
                 <h4 style="color:white;">{biz['name']}</h4>
                 <p style="color:#aaa;">
-                    {biz['category']} • {biz['city']}
+                    {biz['category']} • {biz['location']}
                 </p>
                 <p style="color:#ccc;">⭐ {biz['rating']}</p>
             </div>
